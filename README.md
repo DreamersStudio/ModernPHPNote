@@ -28,3 +28,13 @@
 	use constant Namespace\CONST_NAME;
 	echo CONST_NAME;```
 - **其中函数和常量的别名雨类别名的创建方式一样**
+
+>### 实用技巧 
+- 多重导入
+	－ ```<?php
+		use Symfony\Component\HttpFoundation\Request;
+		use Symfony\Component\HttpFoundation\Respose;
+		use Symfony\Component\HttpFoundation\Cookie;
+	   ```
+- 全局命名空间
+	- 有些代码可能没有命名空间，这些代在全局命名空间中。PHP原生的Exception类就是如此。在命名空间中引用全局没看见中的代码时，要在类、接口、函数或常量名称前加上\符号。
