@@ -31,7 +31,7 @@
 
 >### 实用技巧 
 - 多重导入
-	－ ```<?php
+ - ```<?php
 		use Symfony\Component\HttpFoundation\Request;
 		use Symfony\Component\HttpFoundation\Respose;
 		use Symfony\Component\HttpFoundation\Cookie;
