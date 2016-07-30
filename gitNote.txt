@@ -1,0 +1,17 @@
+git init #初始化仓库
+git add fileName  #添加文件
+git status #查看工作区状态
+git diff fileName  #查看修改内容
+git log  #显示从最近到最远的提交日志
+git reset --hard HEAD^  #回退到上一个版本
+git reset --hard version code 
+git reflog  #查看命令历史，以便回退到未来的某个版本
+
+git checkout -- fileName  #在误改工作区的文件，本指令可直接丢弃工作区的修改
+git reset HEAD fileName  #误改了工作区文件，并且添加到了暂存区，
+			 #想丢弃修改，1. git reset HEAD fileName 
+			 	     #2. git checkout -- fileName
+rm fileName  #从文件管理器删除文件
+	git rm fileName  #从版本库中删除文件
+	git checkout -- fileName  #把版本库中文件版本恢复到工作区
+
