@@ -12,6 +12,10 @@
 - 在大型项目中，如果引入大量的依赖，可能会存在类名冲突的问题，使用命名空间可以解决这个问题。
 
 >### 声明命名空间
+- ```<?php namespace Oreilly\ModernPHP;```
+
+>### 导入和别名
 - ```<?php 
-          namespace Oreilly\ModernPHP;```
--  
+	use Symfony\Component\HttpFoundation\Response as Res;
+	$r = new Res('Oops', 400);
+	$r->send();``` 
