@@ -19,3 +19,12 @@
 	use Symfony\Component\HttpFoundation\Response as Res;
 	$r = new Res('Oops', 400);
 	$r->send();``` 
+- use关键字必须出现在全局作用域中（即不能字类或函数中），因为这个关键字在编译时使用。不过，use关键字可以在命名空间声明语句之后使用，导入其他命名空间中的代码。
+- 从PHP 5.6开始可以导入函数和常量。用法：
+- 导入函数```<?php 
+	use func Namespace\functionName;
+	functionName();```
+- 导入常量```<?php 
+	use constant Namespace\CONST_NAME;
+	echo CONST_NAME;```
+- **其中函数和常量的别名雨类别名的创建方式一样**
