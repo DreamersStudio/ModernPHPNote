@@ -37,10 +37,6 @@
 		use Symfony\Component\HttpFoundation\Cookie;
 	   ```
 - 全局命名空间
-<<<<<<< HEAD
  - 有些代码可能没有命名空间，这些代在全局命名空间中。PHP原生的Exception类就是如此。在命名空间中引用全局没看见中的代码时，要在类、接口、函数或常量名称前加上\符号。
 - 自动加载 
  - 命名空间为PHP Framework Interop Group（PHP-FIG）制定的PSR-4自动加载器标准奠定基础。Composer可以自动加载项目的依赖。
-=======
-	- 有些代码可能没有命名空间，这些代在全局命名空间中。PHP原生的Exception类就是如此。在命名空间中引用全局没看见中的代码时，要在类、接口、函数或常量名称前加上\符号。
->>>>>>> ea778de09dc84468435384604a27b1e768f70f4c
